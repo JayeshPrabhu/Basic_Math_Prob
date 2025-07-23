@@ -9,11 +9,11 @@ public class Print_Divisors {
         for (int i = 1; i <= sqrt; i++) {
             if(num%i==0) {
                 divisors.add(i);
-            }
-               if(i!=num/i){
-                   divisors.add(num/i);
-               }
 
+                if (i != num / i) {
+                    divisors.add(num / i);
+                }
+            }
         }
         System.out.println(divisors);
     }
